@@ -22,6 +22,13 @@ TARGET_BOOTLOADER_BOARD_NAME := qcom
 
 TARGET_OTA_ASSERT_DEVICE := C2105,C2104,c2105,c2104,taoshan
 
+# Liquid Optimizations
+USE_O3 := true
+STRICT := true
+GRAPHITE := true
+LTO := true
+LIQUID_CHANGELOG := true
+
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 # the androidboot.hardware has impact on loading .rc files
